@@ -7,6 +7,9 @@ public class ArithmeticOperations {
         System.out.println(x - y);
         System.out.println(x * y);
         System.out.println(x / y);
+        System.out.println(x % y);
+
+        System.out.println();
 
         double a = 39;
         double b = 10;
@@ -14,5 +17,6 @@ public class ArithmeticOperations {
         System.out.println(a - b);
         System.out.println(a * b);
         System.out.println(a / b);
+        System.out.println(a % b);
     }
 }
