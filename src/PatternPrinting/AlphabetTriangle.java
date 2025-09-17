@@ -9,11 +9,15 @@ public class AlphabetTriangle {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
 
-        for (int i = 1; i <= number; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(((char) (j + 64)) + " ");
+        if (number <= 26) {
+            for (int i = 1; i <= number; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(((char) (j + 64)) + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
+        } else {
+            System.out.println("Invalid number");
         }
     }
 }
