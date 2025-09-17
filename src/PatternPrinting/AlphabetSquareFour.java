@@ -9,11 +9,15 @@ public class AlphabetSquareFour {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
 
-        for (int i = 1; i <= number; i++) {
-            for (int j = 1; j <= number; j++) {
-                System.out.print(((char) (i + 96)) + " ");
+        if (number <= 26) {
+            for (int i = 1; i <= number; i++) {
+                for (int j = 1; j <= number; j++) {
+                    System.out.print(((char) (i + 96)) + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
+        } else {
+            System.out.println("Invalid number");
         }
     }
 }
