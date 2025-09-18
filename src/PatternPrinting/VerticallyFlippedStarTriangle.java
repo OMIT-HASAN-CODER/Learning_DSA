@@ -10,12 +10,11 @@ public class VerticallyFlippedStarTriangle {
         int number = input.nextInt();
 
         for (int i = 1; i <= number; i++) {
-            for (int j = 1; j <= number; j++) {
-                if ((i + j) > number) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
+            for (int j = 1; j <= number - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
