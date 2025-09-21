@@ -10,5 +10,6 @@ public class BuiltIn {
         System.out.println(Math.ceil(-6.9));
         System.out.println(Math.min(69, 96));
         System.out.println(Math.max(69, 96));
+        System.out.println(Math.pow(-6.9, -9.6));
     }
 }
