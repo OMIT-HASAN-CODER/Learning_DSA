@@ -11,5 +11,12 @@ public class ShallowCopyDeepCopy {
         int[] y = Arrays.copyOf(arr, arr.length); //y is deep copy of arr
         y[0] = 10;
         System.out.println(arr[0]);
+
+        //another way for deep copy
+        int[] brr = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            brr[i] = arr[i];
+            System.out.print(brr[i] + " ");
+        }
     }
 }
