@@ -7,20 +7,20 @@ public class ArraySearch {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int a = input.nextInt();
+        int target = input.nextInt();
 
-        boolean flag = false;
+        int flag = -1;
         int[] arr = {10, 12, 3, 2, 5, 9, 15, 10, 7};
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == a) {
-                flag = true;
+            if (arr[i] == target) {
+                flag = i;
                 break;
             }
         }
-        if (flag) {
-            System.out.println(a + " is exist in the array.");
+        if (flag != -1) {
+            System.out.println(target + " is found in the array at index " + flag);
         } else {
-            System.out.println(a + " is not exist in the array.");
+            System.out.println(target + " is not found in the array.");
         }
     }
 }
