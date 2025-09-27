@@ -22,5 +22,15 @@ public class ReverseArray {
             System.out.print(ele + " ");
         }
         System.out.println();
+
+        //another way
+//        for (int k = 0; k < n / 2; k++) {
+//            int temp = arr[k];
+//            arr[k] = arr[n - 1 - k];
+//            arr[n - 1 - k] = temp;
+//        }
+//        for (int ele : arr) {
+//            System.out.print(ele + " ");
+//        }
     }
 }
